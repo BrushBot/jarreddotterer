@@ -1,0 +1,698 @@
+/*
+Theme Name: Jarred Dotterer
+Description: A theme for Jarred Dotterer's portfolio website.
+Version: 1.00
+Author: Jarred Dotterer
+*/
+
+/*--- RESET ---*/
+/*--- GENERAL STYLES ---*/
+/*--- LAYOUT ---*/
+/*--- HEADER AND NAV ---*/
+/*--- FOOTER ---*/
+
+/* ------------BEGIN RESET -------------*/
+
+/* General Demo Style */
+
+html { height: 100%; }
+*,
+*:after,
+*:before {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+/* Clearfix hack by Nicolas Gallagher: http://nicolasgallagher.com/micro-clearfix-hack/ */
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+a img {
+	border: none;
+}
+
+body {
+    font-family: "myriad-pro", sans-serif;
+    background: #E8EBDD url(images/main-bg.png);
+    font-weight: normal;
+    font-size: 22px;
+    line-height: 34px;
+    color: #191A18;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+a {
+	color: #555;
+	text-decoration: none;
+}
+
+.container {
+	width: 100%;
+	position: relative;
+}
+
+.container > header {
+	width: 90%;
+	max-width: 1240px;
+	margin: 0 auto;
+	position: relative;
+	padding: 0 30px 50px 30px;
+}
+
+.container > header {
+	padding: 60px 30px 50px;
+	text-align: center;
+}
+
+.container > header h1 {
+	font-size: 34px;
+	line-height: 38px;
+	margin: 0 auto;
+	font-weight: 700;
+	color: #333;
+}
+
+.container > header h1 span {
+	display: block;
+	font-size: 20px;
+	font-weight: 300;
+}
+
+ol, ul {
+	list-style: none;
+}
+
+/* ------------END RESET -------------*/
+
+
+
+
+/* ------------BEGIN GENERAL STYLES -------------*/
+
+p {
+	font-size: 22px;
+	line-height: 34px;
+	margin-bottom: 22px;
+	font-family: "myriad-pro", sans-serif;
+}
+
+a {
+	color: #F53B2C;
+}
+
+a:hover {
+	color: #D42418;
+}
+
+h1 {
+	font-family: "abril-text", serif;
+	font-weight: normal;
+	font-size: 50px;
+	line-height: 60px;
+	text-align: center;
+	color: #191A18;
+	margin-top: 34px;
+}
+
+.image-title {
+	margin: 0;
+}
+
+h2 {
+	font-family: "abril-text", serif;
+	font-weight: normal;
+	font-size: 50px;
+	line-height: 60px;
+	text-align: center;
+}
+
+h3 {
+	font-size: 28px;
+}
+
+a h2 {
+	color: #F53B2C;
+	border-top: solid 2px #B2B6AA;
+	margin-top: 34px;
+	padding-top: 34px;
+}
+
+a:hover h2 {
+	color: #D42418;
+}
+
+.entry-date {
+	text-align: center;
+	color: #B2B6AA;
+	font-size: 30px;
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+} 
+
+ul li {
+	margin: 0;
+	padding: 0;
+}
+
+label {
+	width: 100%;
+	display: block;
+}
+
+input, textarea {
+	width: 100%;
+	background: #F7F8F2;
+	line-height: 24px;
+	border:solid 1px #B2B6AA;
+}
+
+input:focus, textarea:focus {
+	box-shadow: 0 0 2px rgba(255, 70, 64, 8);
+	border: 1px solid rgba(255, 70, 64, 8);
+}
+
+textarea {
+	height: 250px;
+}
+
+button {
+	color: #F53B2C;
+	background: none;
+	border: none;
+	font-size: 30px;
+	font-family: "abril-text", serif;
+	float: right;
+	margin: 14px 0 0 0;
+	font-weight: bold;
+}
+
+button:hover {
+	color: #D42418;
+	cursor: pointer;
+}
+
+/* ------------END GENERAL STYLES -------------*/
+
+
+
+
+/* ------------BEGIN LAYOUT -------------*/
+.wrapper {
+	max-width: 760px;
+	width: 100%;
+	margin: 34px auto 34px auto;
+	padding: 0 20px;
+}
+
+.project {
+	border-top: solid 2px #B2B6AA;
+	margin-top: 34px;
+	padding-top: 34px;
+}
+
+.project img, .about-photo {
+	max-width: 96%;
+	border: solid 5px #B2B6AA;
+	margin: 20px auto 16px;
+	display: block;
+}
+
+.content {
+	padding: 24px 0 6px;
+	margin: 34px 0;
+	border-top: solid 2px #B2B6AA;
+	border-bottom: solid 2px #B2B6AA;
+}
+
+.note {
+	padding: 20px;
+	border: solid 6px #B2B6AA;
+	border-radius: 4px;
+	margin: 20px 0 24px;
+}
+
+.half {
+	width: 48%;
+	float: left;
+	margin-right: 4%;
+}
+
+.half.last{
+	margin-right: 0;
+}
+
+.error {
+	color: #F53B2C;
+}
+
+#errors {
+	list-style: disc;
+	list-style-position: inside;
+	padding-left: 20px;
+	border-bottom: solid 2px #B2B6AA;
+	padding-bottom: 20px;
+	margin:10px 0 20px;
+}
+
+/* ------------END LAYOUT -------------*/
+
+
+
+
+/* ------------BEGIN HEADER AND NAV-------------*/
+
+#menu-container {
+	background: #F53B2C url(images/menu-bg.png);
+	width: 100%;
+	height: 76px;
+	position: relative;
+}
+
+#navigation-container {
+	margin-bottom: 12px;
+
+}
+
+#logo_link {
+	width: 28%;
+	float: left;
+}
+
+#logo_container {
+	font-family: "abril-text", serif;
+	font-weight: normal;
+	font-size: 34px;
+	text-align: right;
+	color: #191A18;
+	padding: 21px 10px 21px;
+
+}
+
+#navigation-button {
+	display: none;
+	height: 52px;
+	width: 46px;
+	position: absolute;
+	background: url(images/mobile-nav.png) no-repeat;
+	top: 12px;
+	left: 12px;
+	cursor: pointer;
+}
+
+#navigation-button .nav-text {
+	color: #00B4E2;
+	text-align: center;
+	padding-top: 95px;
+	margin: 0;
+	display: block;
+	font-family: "abril-text", serif;
+	font-weight: normal;
+	font-size: 34px;
+}
+
+#navigation li a {
+	display: block;
+	width: 18%;
+	float: left;
+	border-right: solid 1px #191A18;
+	text-decoration: none;
+	text-align:  center;
+	color: #191A18;
+	font-family: "abril-text", serif;
+	font-weight: normal;
+	font-size: 34px;
+	line-height: 47px;
+	margin-bottom: 0;
+}
+
+#navigation li a:hover {
+	background: #F65346;
+}
+
+#naviagion li .active {
+	background: #E8EBDD url(images/main-bg.png);
+}
+
+#navigation li a .nav-icon {
+	float: right;
+	margin: 12px 10px 0 10px;
+	height: 50px;
+}
+
+#navigation li a.nav-journal .nav-icon {
+	width: 37px;
+	background: url(images/journal-black.png);
+}
+
+#navigation li a.nav-work .nav-icon {
+	width: 29px;
+	background: url(images/work-black.png);
+}
+
+#navigation li a.nav-about .nav-icon {
+	width: 35px;
+	background: url(images/about-black.png);
+}
+
+#navigation li a.nav-contact .nav-icon {
+	width: 40px;
+	background: url(images/contact-black.png);
+}
+
+#navigation li a .nav-text {
+	text-align: right;
+	margin: 0;
+	display: block;
+	padding: 14px 10px 15px;
+}
+/* ------------END HEADER AND NAV -------------*/
+
+
+
+
+
+
+/* ------------BEGIN FOOTER -------------*/
+
+#footer {
+	background: #191A18;
+}
+
+#footer p {
+	color: #E8EBDD;
+	font-size: 14px;
+	line-height: 24px;
+	font-weight: 300;
+	margin: 0;
+}
+
+/*#footer a {
+	font-size: 14px;
+	line-height: 24px;
+	font-weight: 300;
+}*/
+
+.about-blurb {
+	width: 65%;
+	float: left;
+	margin-right: 2%;
+	padding-right: 2%;
+	border-right: solid 1px #B2B6AA;
+}
+
+.about-blurb img {
+	float: left;
+	padding-right: 10px;
+}
+
+.social {
+	width: 33%;
+	float: left;
+}
+
+.social .fa {
+	font-size: 28px;	
+}
+
+.social h2 {
+	color: #E8EBDD;
+	font-size: 24px;
+	line-height: 32px;
+	text-align: left;
+}
+
+.social ul li {
+	clear: both;
+}
+
+.sprite {
+	background-image: url(images/spritesheet.png);
+	background-repeat: no-repeat;
+	display: block;
+}
+
+.twitter-icon {
+	background-position: -226px -5px;
+	width: 40px;
+	height: 30px;
+	float: left;
+}
+
+.instagram-icon {
+	background-position: -270px -5px;
+	width: 40px;
+	height: 30px;
+	float: left;
+}
+
+a:hover .twitter-icon {
+	background-position: -226px -35px;
+	width: 40px;
+	height: 30px;
+}
+
+a:hover .instagram-icon {
+	background-position: -270px -35px;
+	width: 40px;
+	height: 30px;
+}
+
+/* ------------END FOOTER -------------*/
+
+@media screen and (min-width: 551px) {
+	#navigation {
+		display: block!important;
+	}
+}
+
+@media screen and (max-width: 1150px) {
+	#navigation li a.nav-journal .nav-icon,
+	#navigation li a.nav-work .nav-icon,
+	#navigation li a.nav-about .nav-icon,
+	#navigation li a.nav-contact .nav-icon {
+		display: none;
+	}
+}
+
+@media screen and (max-width: 950px) {
+	#navigation li a .nav-text, #logo_container {
+		font-size: 24px;
+		line-height: 33px;
+		padding: 22px 10px 21px 10px;
+	}
+	
+	#navigation li a {
+	width: 17%;
+	}
+	
+	#logo_link {
+	width: 32%;
+	}
+}
+
+@media screen and (max-width: 725px) {
+	#navigation li a {
+		width: 15%;
+	}
+	#navigation li a .nav-text {
+		font-size: 16px;
+		padding: 2px 10px 6px 10px;
+		text-align: center;
+		line-height: 23px;
+	}
+	#logo_link {
+		width: 40%;
+	}
+	#navigation li a.nav-journal .nav-icon,
+	#navigation li a.nav-work .nav-icon,
+	#navigation li a.nav-about .nav-icon,
+	#navigation li a.nav-contact .nav-icon {
+		display: block;
+		float: none;
+		height: 45px;
+	}
+	#navigation li a.nav-journal .nav-icon {
+		width: 37px;
+		background: url(images/journal-black-small.png) center bottom no-repeat;
+		width: 100%;
+		margin: 0;
+	}
+	
+	#navigation li a.nav-work .nav-icon {
+		width: 29px;
+		background: url(images/work-black-small.png) center bottom no-repeat;
+		width: 100%;
+		margin: 0;
+
+	}
+	
+	#navigation li a.nav-about .nav-icon {
+		width: 35px;
+		background: url(images/about-black-small.png) center bottom no-repeat;
+		width: 100%;
+		margin: 0;
+
+	}
+	
+	#navigation li a.nav-contact .nav-icon {
+		width: 40px;
+		background: url(images/contact-black-small.png) center bottom no-repeat;
+		width: 100%;
+		margin: 0;
+
+	}
+	
+	.social, .about-blurb {
+		width: 100%;
+		border-right: none;
+		margin: 0; 
+		padding: 0 0 10px 0;
+	}
+	
+	.social {
+		margin: 10px 0 0 0;
+		padding: 10px 0 0 0;
+		border-top: solid 1px #B2B6AA;
+	}
+}
+
+@media screen and (max-width: 550px) {
+	
+	p, a, ul, ol, li {
+		font-size: 18px;
+		line-height: 26px;
+		margin-bottom: 18px;
+	}
+	
+	h1 {
+		font-size: 32px;
+		line-height: 38px;
+		margin-bottom: 26px;
+	}
+	h2 {
+		font-size: 32px;
+		line-height: 38px;
+		text-align: center;
+	}
+
+	h3 {
+		font-size: 20px;
+		line-height: 32px
+	}
+	
+	a h2 {
+		margin-top: 26px;
+		padding-top: 26px;
+	}
+	
+	.entry-date {
+		font-size: 22px;
+	}
+	
+	#navigation-button {
+		display: block;
+	}
+	
+	#navigation {
+		position: absolute;
+		top: 76px;
+		width: 100%;
+		/*display: block!important; //Uncomment to work on mobile nav*/ 
+		background: #191A18;
+		display: none;
+	}
+	
+	#navigation li a {
+		width: 25%;
+	}
+	
+	#navigation li a:hover {
+		background: #B2B6AA;
+	}
+	
+	#navigation li a .nav-text {
+		font-size: 16px;
+		padding: 2px 10px 6px 10px;
+		text-align: center;
+		color: #F2392C;
+	}
+	
+	#logo_link {
+		width: 78%;
+		float: right;
+	}
+	
+	#navigation li a.nav-journal .nav-icon,
+	#navigation li a.nav-work .nav-icon,
+	#navigation li a.nav-about .nav-icon,
+	#navigation li a.nav-contact .nav-icon {
+		display: block;
+		float: none;
+	}
+	
+	#navigation li a.nav-journal .nav-icon {
+		width: 37px;
+		background: url(images/journal-orange-small.png) center bottom no-repeat;
+		width: 100%;
+		margin: 0;
+	}
+	
+	#navigation li a.nav-work .nav-icon {
+		width: 29px;
+		background: url(images/work-orange-small.png) center bottom no-repeat;
+		width: 100%;
+		margin: 0;
+
+	}
+	
+	#navigation li a.nav-about .nav-icon {
+		width: 35px;
+		background: url(images/about-orange-small.png) center bottom no-repeat;
+		width: 100%;
+		margin: 0;
+
+	}
+	
+	#navigation li a.nav-contact .nav-icon {
+		width: 40px;
+		background: url(images/contact-orange-small.png) center bottom no-repeat;
+		width: 100%;
+		margin: 0;
+	}
+
+	.half, .half.last {
+		width: 100%;
+		margin-right: 0;
+		float: none;
+	}
+}
+
+@media screen and (max-width: 350px) {
+	#navigation li a .nav-text {
+		font-size: 14px;
+	}
+	
+	p, a {
+		font-size: 16px;
+		line-height: 24px;
+		margin-bottom: 18px;
+	}
+}
