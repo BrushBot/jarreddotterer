@@ -10,7 +10,7 @@
 					
 					<img src="<?php bloginfo( 'template_url' ); ?>/images/jarred.jpg" alt="Jarred Dotterer">
 					
-					<p>A native of Denver, Colorado, Jarred is a passionate web designer and developer. When Jarred isn't working on websites he can be found cooking, playing his guitar, and spending time with his beautiful bride, Kristen, and daughter, Annalyse. To learn more check out the <a href="/about">about</a> page.</p>
+					<p>A native of Denver, Colorado, Jarred is a passionate about software creation. When Jarred isn't working on websites he can be found cooking, playing guitar, playing saxophone, painting minitures, and spending time with his family. To learn more check out the <a href="/about">about</a> page.</p>
 					
 				</div>
 				
@@ -46,7 +46,7 @@
 						
 						<li>
 						 
-						 <a href="//github.com/JDOTT">
+						 <a href="//github.com/BrushBot">
 						 
 						 	<span class="fa fa-github"></span>
 						 
